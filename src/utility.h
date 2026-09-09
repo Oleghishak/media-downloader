@@ -887,8 +887,9 @@ namespace utility
 		bool aarch32() const ;
 	private:
 		static const QString& getCPU() ;
+		static QByteArray getCPUNatively() ;
+
 		const QString& m_cpu ;
-		QByteArray getCPUNatively() const ;
 	} ;
 
 	class UrlLinks

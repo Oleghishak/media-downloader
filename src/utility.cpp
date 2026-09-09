@@ -3017,12 +3017,12 @@ const QString& utility::CPU::getCPU()
 	static QString m = QSysInfo::currentCpuArchitecture() ;
 	return m ;
 #else
-	static QString m = this->getCPUNatively() ;
+	static QString m = utility::CPU::getCPUNatively() ;
 	return m ;
 #endif
 }
 
-QByteArray utility::CPU::getCPUNatively() const
+QByteArray utility::CPU::getCPUNatively()
 {
 	if( utility::platformIsLinux() ){
 
