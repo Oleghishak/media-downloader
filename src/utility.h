@@ -886,7 +886,7 @@ namespace utility
 		bool aarch64() const ;
 		bool aarch32() const ;
 	private:
-		const QString& getCPU() const ;
+		static const QString& getCPU() ;
 		const QString& m_cpu ;
 		QByteArray getCPUNatively() const ;
 	} ;
